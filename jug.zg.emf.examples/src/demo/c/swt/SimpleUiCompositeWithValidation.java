@@ -1,4 +1,4 @@
-package demo.ui.c;
+package demo.c.swt;
 
 import org.eclipse.swt.widgets.Composite;
 

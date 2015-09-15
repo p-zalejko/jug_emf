@@ -1,11 +1,11 @@
-package demo.ui.a;
+package demo.a;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
+import demo.AbstractDemo;
 import demo.Address;
 import demo.Member;
-import demo.ui.AbstractDemo;
 
 public class DemoA_EObject_Content extends AbstractDemo {
 

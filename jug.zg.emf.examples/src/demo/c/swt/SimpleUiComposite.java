@@ -1,4 +1,4 @@
-package demo.ui.c;
+package demo.c.swt;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.layout.GridLayout;
@@ -28,7 +28,6 @@ import org.eclipse.emf.ecore.ENamedElement;
 import demo.DemoPackage.Literals;
 
 public class SimpleUiComposite extends Composite {
-	private DataBindingContext m_bindingContext;
 
 	protected Member member;
 	protected Address address;
@@ -105,7 +104,7 @@ public class SimpleUiComposite extends Composite {
 
 			}
 		});
-		m_bindingContext = initDataBindings();
+		initDataBindings();
 	}
 
 	protected DataBindingContext initDataBindings() {
@@ -134,11 +133,12 @@ public class SimpleUiComposite extends Composite {
 		addAddapters();
 	}
 
-	protected void addAddapters(){
+	protected void addAddapters() {
 		ExampleAdapter adapter = new ExampleAdapter();
 		member.eAdapters().add(adapter);
 		address.eAdapters().add(adapter);
 	}
+
 	private static class ExampleAdapter extends AdapterImpl {
 
 		@Override

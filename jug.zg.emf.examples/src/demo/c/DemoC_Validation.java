@@ -1,4 +1,4 @@
-package demo.ui.c;
+package demo.c;
 
 import org.eclipse.core.databinding.observable.Realm;
 import org.eclipse.jface.databinding.swt.DisplayRealm;
@@ -7,7 +7,8 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import demo.ui.AbstractDemo;
+import demo.AbstractDemo;
+import demo.c.swt.SimpleUiCompositeWithValidation;
 
 public class DemoC_Validation extends AbstractDemo {
 
@@ -17,9 +18,6 @@ public class DemoC_Validation extends AbstractDemo {
 
 	@Override
 	public void demo() {
-		// data bindng
-		// validation(OCL, java)
-
 		Display display = Display.getDefault();
 		Realm.runWithDefault(DisplayRealm.getRealm(display), new Runnable() {
 			public void run() {
@@ -28,7 +26,6 @@ public class DemoC_Validation extends AbstractDemo {
 				shell.setLayout(new FillLayout());
 				new SimpleUiCompositeWithValidation(shell, SWT.NONE);
 
-				// shell.pack();
 				shell.open();
 				while (!shell.isDisposed()) {
 					if (!display.readAndDispatch())

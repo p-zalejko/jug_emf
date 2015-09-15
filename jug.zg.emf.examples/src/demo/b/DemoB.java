@@ -1,4 +1,4 @@
-package demo.ui.b;
+package demo.b;
 
 import org.eclipse.emf.common.command.BasicCommandStack;
 import org.eclipse.emf.common.command.Command;
@@ -8,10 +8,10 @@ import org.eclipse.emf.edit.domain.AdapterFactoryEditingDomain;
 import org.eclipse.emf.edit.domain.EditingDomain;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
 
+import demo.AbstractDemo;
 import demo.Address;
 import demo.DemoPackage;
 import demo.Member;
-import demo.ui.AbstractDemo;
 
 public class DemoB extends AbstractDemo {
 

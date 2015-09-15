@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Ui
 Bundle-SymbolicName: demo.ui
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: demo.ui.Activator
+Bundle-Activator: demo.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  jug.zg.emf.model;bundle-version="0.1.0",
@@ -15,7 +15,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.jface.databinding,
  com.ibm.icu,
  org.eclipse.emf.databinding,
- OCLinEcoreTutorial;bundle-version="1.0.0",
  org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

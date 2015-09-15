@@ -1,9 +1,9 @@
-package demo.ui.a;
+package demo.a;
 
+import demo.AbstractDemo;
 import demo.Address;
 import demo.Meeting;
 import demo.Member;
-import demo.ui.AbstractDemo;
 
 public class DemoA extends AbstractDemo {
 

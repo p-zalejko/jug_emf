@@ -1,4 +1,4 @@
-package demo.ui;
+package demo;
 
 import demo.Address;
 import demo.DemoFactory;
