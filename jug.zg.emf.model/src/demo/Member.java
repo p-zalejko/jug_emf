@@ -33,7 +33,7 @@ public interface Member extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see demo.DemoPackage#getMember_Name()
-	 * @model
+	 * @model dataType="demo.Min2Chars"
 	 * @generated
 	 */
 	String getName();

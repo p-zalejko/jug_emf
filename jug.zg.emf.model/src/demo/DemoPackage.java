@@ -4,6 +4,7 @@ package demo;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -206,6 +207,17 @@ public interface DemoPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '<em>Min2 Chars</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.String
+	 * @see demo.impl.DemoPackageImpl#getMin2Chars()
+	 * @generated
+	 */
+	int MIN2_CHARS = 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link demo.Member <em>Member</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -309,6 +321,18 @@ public interface DemoPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getMeeting__HowManyMembers();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.String <em>Min2 Chars</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Min2 Chars</em>'.
+	 * @see java.lang.String
+	 * @model instanceClass="java.lang.String"
+	 *        extendedMetaData="minLength='2'"
+	 * @generated
+	 */
+	EDataType getMin2Chars();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -418,6 +442,16 @@ public interface DemoPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation MEETING___HOW_MANY_MEMBERS = eINSTANCE.getMeeting__HowManyMembers();
+
+		/**
+		 * The meta object literal for the '<em>Min2 Chars</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.lang.String
+		 * @see demo.impl.DemoPackageImpl#getMin2Chars()
+		 * @generated
+		 */
+		EDataType MIN2_CHARS = eINSTANCE.getMin2Chars();
 
 	}
 

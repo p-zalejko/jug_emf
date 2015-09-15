@@ -16,7 +16,9 @@ public class SimpleUiCompositeWithValidation extends SimpleUiComposite {
 
 	@Override
 	protected void addAddapters() {
-		address.eAdapters().add(new ExampleValidationAdapter());
+		ExampleValidationAdapter adapter = new ExampleValidationAdapter();
+		member.eAdapters().add(adapter);
+		address.eAdapters().add(adapter);
 	}
 
 	private class ExampleValidationAdapter extends AdapterImpl {

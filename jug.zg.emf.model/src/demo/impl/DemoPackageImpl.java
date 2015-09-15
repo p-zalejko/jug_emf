@@ -11,6 +11,7 @@ import demo.Member;
 import demo.util.DemoValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -45,6 +46,13 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * @generated
 	 */
 	private EClass meetingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType min2CharsEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -211,6 +219,15 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EDataType getMin2Chars() {
+		return min2CharsEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DemoFactory getDemoFactory() {
 		return (DemoFactory)getEFactoryInstance();
 	}
@@ -246,6 +263,9 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		createEAttribute(meetingEClass, MEETING__NAME);
 		createEReference(meetingEClass, MEETING__MEMBERS);
 		createEOperation(meetingEClass, MEETING___HOW_MANY_MEMBERS);
+
+		// Create data types
+		min2CharsEDataType = createEDataType(MIN2_CHARS);
 	}
 
 	/**
@@ -279,7 +299,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(memberEClass, Member.class, "Member", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getMember_Name(), ecorePackage.getEString(), "name", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMember_Name(), this.getMin2Chars(), "name", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMember_Address(), this.getAddress(), null, "address", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(addressEClass, Address.class, "Address", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -295,8 +315,31 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 
 		initEOperation(getMeeting__HowManyMembers(), ecorePackage.getEInt(), "howManyMembers", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		// Initialize data types
+		initEDataType(min2CharsEDataType, String.class, "Min2Chars", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
+		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+		addAnnotation
+		  (min2CharsEDataType, 
+		   source, 
+		   new String[] {
+			 "minLength", "2"
+		   });
 	}
 
 } //DemoPackageImpl

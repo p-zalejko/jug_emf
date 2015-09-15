@@ -99,6 +99,8 @@ public class DemoValidator extends EObjectValidator {
 				return validateAddress((Address)value, diagnostics, context);
 			case DemoPackage.MEETING:
 				return validateMeeting((Meeting)value, diagnostics, context);
+			case DemoPackage.MIN2_CHARS:
+				return validateMin2Chars((String)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -149,6 +151,30 @@ public class DemoValidator extends EObjectValidator {
 	 */
 	public boolean validateMeeting(Meeting meeting, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(meeting, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMin2Chars(String min2Chars, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		boolean result = validateMin2Chars_MinLength(min2Chars, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the MinLength constraint of '<em>Min2 Chars</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMin2Chars_MinLength(String min2Chars, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		int length = min2Chars.length();
+		boolean result = length >= 2;
+		if (!result && diagnostics != null)
+			reportMinLengthViolation(DemoPackage.Literals.MIN2_CHARS, min2Chars, length, 2, diagnostics, context);
+		return result;
 	}
 
 	/**

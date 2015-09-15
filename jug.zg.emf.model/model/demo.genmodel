@@ -6,6 +6,7 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>demo.ecore</foreignModel>
   <genPackages prefix="Demo" disposableProviderFactory="true" ecorePackage="demo.ecore#/">
+    <genDataTypes ecoreDataType="demo.ecore#//Min2Chars"/>
     <genClasses ecoreClass="demo.ecore#//Member">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute demo.ecore#//Member/name"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference demo.ecore#//Member/address"/>
