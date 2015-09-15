@@ -8,12 +8,14 @@ import demo.DemoPackage;
 import demo.Meeting;
 import demo.Member;
 
+import demo.util.DemoValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -96,6 +98,15 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		// Initialize created meta-data
 		theDemoPackage.initializePackageContents();
 
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theDemoPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return DemoValidator.INSTANCE;
+				 }
+			 });
+
 		// Mark meta-data to indicate it can't be changed
 		theDemoPackage.freeze();
 
@@ -148,6 +159,15 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 */
 	public EAttribute getAddress_Email() {
 		return (EAttribute)addressEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getAddress__HasAddressSet__DiagnosticChain_Map() {
+		return addressEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -220,6 +240,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 
 		addressEClass = createEClass(ADDRESS);
 		createEAttribute(addressEClass, ADDRESS__EMAIL);
+		createEOperation(addressEClass, ADDRESS___HAS_ADDRESS_SET__DIAGNOSTICCHAIN_MAP);
 
 		meetingEClass = createEClass(MEETING);
 		createEAttribute(meetingEClass, MEETING__NAME);
@@ -263,6 +284,10 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 
 		initEClass(addressEClass, Address.class, "Address", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAddress_Email(), ecorePackage.getEString(), "email", null, 0, 1, Address.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		EOperation op = initEOperation(getAddress__HasAddressSet__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "hasAddressSet", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "chain", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEMap(), "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(meetingEClass, Meeting.class, "Meeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMeeting_Name(), ecorePackage.getEString(), "name", null, 0, 1, Meeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

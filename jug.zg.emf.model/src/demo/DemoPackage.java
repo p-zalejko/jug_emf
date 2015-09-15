@@ -132,13 +132,22 @@ public interface DemoPackage extends EPackage {
 	int ADDRESS_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Has Address Set</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDRESS___HAS_ADDRESS_SET__DIAGNOSTICCHAIN_MAP = 0;
+
+	/**
 	 * The number of operations of the '<em>Address</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_OPERATION_COUNT = 0;
+	int ADDRESS_OPERATION_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link demo.impl.MeetingImpl <em>Meeting</em>}' class.
@@ -250,6 +259,16 @@ public interface DemoPackage extends EPackage {
 	EAttribute getAddress_Email();
 
 	/**
+	 * Returns the meta object for the '{@link demo.Address#hasAddressSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Has Address Set</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Has Address Set</em>' operation.
+	 * @see demo.Address#hasAddressSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getAddress__HasAddressSet__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link demo.Meeting <em>Meeting</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -357,6 +376,14 @@ public interface DemoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ADDRESS__EMAIL = eINSTANCE.getAddress_Email();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Address Set</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ADDRESS___HAS_ADDRESS_SET__DIAGNOSTICCHAIN_MAP = eINSTANCE.getAddress__HasAddressSet__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link demo.impl.MeetingImpl <em>Meeting</em>}' class.

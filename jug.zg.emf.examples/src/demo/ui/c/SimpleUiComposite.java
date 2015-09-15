@@ -30,8 +30,8 @@ import demo.DemoPackage.Literals;
 public class SimpleUiComposite extends Composite {
 	private DataBindingContext m_bindingContext;
 
-	private Member member;
-	private Address address;
+	protected Member member;
+	protected Address address;
 
 	private Text memberNameText;
 	private Text addressText;
@@ -73,7 +73,7 @@ public class SimpleUiComposite extends Composite {
 		saveButton.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		saveButton.setText("Save");
 		new Label(grpMember, SWT.NONE);
-		
+
 		Button loadDataButton = new Button(grpMember, SWT.NONE);
 		loadDataButton.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		loadDataButton.setText("Load example data");
@@ -91,8 +91,7 @@ public class SimpleUiComposite extends Composite {
 
 			}
 		});
-		
-		
+
 		loadDataButton.addSelectionListener(new SelectionListener() {
 
 			@Override
@@ -115,10 +114,11 @@ public class SimpleUiComposite extends Composite {
 		IObservableValue observeTextMemberNameTextObserveWidget = WidgetProperties.text(SWT.Modify)
 				.observe(memberNameText);
 		IObservableValue memberNameObserveValue = EMFObservables.observeValue(member, Literals.MEMBER__NAME);
-	
-		UpdateValueStrategy targetToModel =null;
-		UpdateValueStrategy modelToTarget =null;
-		bindingContext.bindValue(observeTextMemberNameTextObserveWidget, memberNameObserveValue, targetToModel, modelToTarget);
+
+		UpdateValueStrategy targetToModel = null;
+		UpdateValueStrategy modelToTarget = null;
+		bindingContext.bindValue(observeTextMemberNameTextObserveWidget, memberNameObserveValue, targetToModel,
+				modelToTarget);
 		//
 		IObservableValue observeTextAddressTextObserveWidget = WidgetProperties.text(SWT.Modify).observe(addressText);
 		IObservableValue addressEmailObserveValue = EMFObservables.observeValue(address, Literals.ADDRESS__EMAIL);
@@ -127,24 +127,27 @@ public class SimpleUiComposite extends Composite {
 		return bindingContext;
 	}
 
-	private void initModel() {
+	protected void initModel() {
 		member = DemoFactory.eINSTANCE.createMember();
 		address = DemoFactory.eINSTANCE.createAddress();
 		member.setAddress(address);
-		
+		addAddapters();
+	}
+
+	protected void addAddapters(){
 		ExampleAdapter adapter = new ExampleAdapter();
 		member.eAdapters().add(adapter);
 		address.eAdapters().add(adapter);
 	}
-}
+	private static class ExampleAdapter extends AdapterImpl {
 
-class ExampleAdapter extends AdapterImpl {
-
-	@Override
-	public void notifyChanged(Notification msg) {
-		if (msg.getEventType() == Notification.SET) {
-			ENamedElement element = (ENamedElement) msg.getFeature();
-			System.out.printf("Set a new value for the '%s' attribute: %s\n", element.getName(), msg.getNewStringValue());
+		@Override
+		public void notifyChanged(Notification msg) {
+			if (msg.getEventType() == Notification.SET) {
+				ENamedElement element = (ENamedElement) msg.getFeature();
+				System.out.printf("Set a new value for the '%s' attribute: %s\n", element.getName(),
+						msg.getNewStringValue());
+			}
 		}
 	}
 }

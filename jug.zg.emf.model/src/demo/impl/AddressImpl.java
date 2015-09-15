@@ -5,8 +5,15 @@ package demo.impl;
 import demo.Address;
 import demo.DemoPackage;
 
+import demo.util.DemoValidator;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -89,6 +96,25 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean hasAddressSet(DiagnosticChain chain, Map context) {
+		if (getEmail() == null || getEmail().isEmpty()) {
+				chain.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 DemoValidator.DIAGNOSTIC_SOURCE,
+						 DemoValidator.ADDRESS__HAS_ADDRESS_SET,
+						 "Email address must be set",
+						 new Object [] { this }));
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -142,6 +168,20 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 				return EMAIL_EDEFAULT == null ? email != null : !EMAIL_EDEFAULT.equals(email);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case DemoPackage.ADDRESS___HAS_ADDRESS_SET__DIAGNOSTICCHAIN_MAP:
+				return hasAddressSet((DiagnosticChain)arguments.get(0), (Map)arguments.get(1));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

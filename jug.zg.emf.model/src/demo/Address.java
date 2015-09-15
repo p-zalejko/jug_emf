@@ -2,6 +2,8 @@
  */
 package demo;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -46,5 +48,13 @@ public interface Address extends EObject {
 	 * @generated
 	 */
 	void setEmail(String value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	boolean hasAddressSet(DiagnosticChain chain, Map context);
 
 } // Address

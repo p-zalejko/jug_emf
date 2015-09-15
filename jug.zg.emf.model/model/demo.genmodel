@@ -12,6 +12,10 @@
     </genClasses>
     <genClasses ecoreClass="demo.ecore#//Address">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute demo.ecore#//Address/email"/>
+      <genOperations ecoreOperation="demo.ecore#//Address/hasAddressSet">
+        <genParameters ecoreParameter="demo.ecore#//Address/hasAddressSet/chain"/>
+        <genParameters ecoreParameter="demo.ecore#//Address/hasAddressSet/context"/>
+      </genOperations>
     </genClasses>
     <genClasses ecoreClass="demo.ecore#//Meeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute demo.ecore#//Meeting/name"/>
