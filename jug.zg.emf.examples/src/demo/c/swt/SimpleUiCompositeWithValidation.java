@@ -16,20 +16,26 @@ public class SimpleUiCompositeWithValidation extends SimpleUiComposite {
 
 	@Override
 	protected void addAddapters() {
-		ExampleValidationAdapter adapter = new ExampleValidationAdapter();
+		ExampleValidationAdapter adapter = new ExampleValidationAdapter(member);
+		// added to two objects in order to trigger validation
 		member.eAdapters().add(adapter);
 		address.eAdapters().add(adapter);
 	}
 
 	private class ExampleValidationAdapter extends AdapterImpl {
 
+		private EObject toValidate;
+
+		public ExampleValidationAdapter(EObject toValidate) {
+			this.toValidate = toValidate;
+		}
+
 		@Override
 		public void notifyChanged(Notification msg) {
 			if (msg.getEventType() == Notification.SET) {
-				EObject notifier = (EObject) msg.getNotifier();
-				Diagnostic validate = Diagnostician.INSTANCE.validate(notifier);
+				Diagnostic validate = Diagnostician.INSTANCE.validate(toValidate);
 				if (validate.getSeverity() == Diagnostic.OK) {
-					System.out.printf("The %s is valid.\n", notifier.toString());
+					System.out.printf("The %s is valid.\n", toValidate.toString());
 				} else {
 					for (Diagnostic diagnostic : validate.getChildren()) {
 						System.out.println(diagnostic.getMessage());

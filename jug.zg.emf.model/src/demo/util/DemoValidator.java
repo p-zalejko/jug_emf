@@ -5,10 +5,8 @@ package demo.util;
 import demo.*;
 
 import java.util.Map;
-
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
@@ -40,12 +38,28 @@ public class DemoValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "demo";
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Check Address' of 'Member'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEMBER__CHECK_ADDRESS = 1;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Check Name' of 'Member'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEMBER__CHECK_NAME = 2;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Has Address Set' of 'Address'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADDRESS__HAS_ADDRESS_SET = 1;
+	public static final int ADDRESS__HAS_ADDRESS_SET = 3;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -53,7 +67,7 @@ public class DemoValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 3;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -112,7 +126,38 @@ public class DemoValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMember(Member member, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(member, diagnostics, context);
+		if (!validate_NoCircularContainment(member, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMember_checkAddress(member, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMember_checkName(member, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the checkAddress constraint of '<em>Member</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMember_checkAddress(Member member, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return member.checkAddress(diagnostics, context);
+	}
+
+	/**
+	 * Validates the checkName constraint of '<em>Member</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMember_checkName(Member member, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return member.checkName(diagnostics, context);
 	}
 
 	/**

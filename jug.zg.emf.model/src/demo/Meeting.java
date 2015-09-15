@@ -35,7 +35,7 @@ public interface Meeting extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see demo.DemoPackage#getMeeting_Name()
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://www.jug.zgora.pl/demo!Meeting!name'"
 	 * @generated
 	 */
 	String getName();
@@ -61,7 +61,7 @@ public interface Meeting extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Members</em>' reference list.
 	 * @see demo.DemoPackage#getMeeting_Members()
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://www.jug.zgora.pl/demo!Meeting!members'"
 	 * @generated
 	 */
 	EList<Member> getMembers();

@@ -34,7 +34,7 @@ public interface Address extends EObject {
 	 * @return the value of the '<em>Email</em>' attribute.
 	 * @see #setEmail(String)
 	 * @see demo.DemoPackage#getAddress_Email()
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://www.jug.zgora.pl/demo!Address!email'"
 	 * @generated
 	 */
 	String getEmail();
@@ -52,7 +52,7 @@ public interface Address extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='throw new UnsupportedOperationException();  // FIXME Unimplemented http://www.jug.zgora.pl/demo!Address!invariant~hasAddressSet'"
 	 * @generated
 	 */
 	boolean hasAddressSet(DiagnosticChain chain, Map context);

@@ -96,13 +96,31 @@ public interface DemoPackage extends EPackage {
 	int MEMBER_FEATURE_COUNT = 2;
 
 	/**
+	 * The operation id for the '<em>Check Address</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11 = 0;
+
+	/**
+	 * The operation id for the '<em>Check Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11 = 1;
+
+	/**
 	 * The number of operations of the '<em>Member</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MEMBER_OPERATION_COUNT = 0;
+	int MEMBER_OPERATION_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link demo.impl.AddressImpl <em>Address</em>}' class.
@@ -250,6 +268,26 @@ public interface DemoPackage extends EPackage {
 	EReference getMember_Address();
 
 	/**
+	 * Returns the meta object for the '{@link demo.Member#checkAddress(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Check Address</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Address</em>' operation.
+	 * @see demo.Member#checkAddress(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getMember__CheckAddress__DiagnosticChain_Map_11();
+
+	/**
+	 * Returns the meta object for the '{@link demo.Member#checkName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Check Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Name</em>' operation.
+	 * @see demo.Member#checkName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getMember__CheckName__DiagnosticChain_Map_11();
+
+	/**
 	 * Returns the meta object for class '{@link demo.Address <em>Address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -382,6 +420,22 @@ public interface DemoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MEMBER__ADDRESS = eINSTANCE.getMember_Address();
+
+		/**
+		 * The meta object literal for the '<em><b>Check Address</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11 = eINSTANCE.getMember__CheckAddress__DiagnosticChain_Map_11();
+
+		/**
+		 * The meta object literal for the '<em><b>Check Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11 = eINSTANCE.getMember__CheckName__DiagnosticChain_Map_11();
 
 		/**
 		 * The meta object literal for the '{@link demo.impl.AddressImpl <em>Address</em>}' class.
