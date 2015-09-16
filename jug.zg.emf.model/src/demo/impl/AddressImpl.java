@@ -99,6 +99,8 @@ public class AddressImpl extends EObjectImpl implements Address {
 	 * @generated NOT
 	 */
 	public boolean hasAddressSet(DiagnosticChain chain, Map context) {
+		// @generated NOT
+		// DemoPackage.Literals.ADDRESS__EMAIL  --> indicates that the email address field has an incorrect value
 		if (getEmail() == null || getEmail().isEmpty()) {
 				chain.add
 					(new BasicDiagnostic
@@ -106,7 +108,7 @@ public class AddressImpl extends EObjectImpl implements Address {
 						 DemoValidator.DIAGNOSTIC_SOURCE,
 						 DemoValidator.ADDRESS__HAS_ADDRESS_SET,
 						 "Email address must be set",
-						 new Object [] { this }));
+						 new Object [] { this , DemoPackage.Literals.ADDRESS__EMAIL}));
 			return false;
 		}
 		return true;

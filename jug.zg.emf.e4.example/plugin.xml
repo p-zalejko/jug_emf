@@ -20,6 +20,8 @@
 
 
 <extension  point="org.eclipse.emf.ecp.view.model.provider.xmi.file">
+<file filePath="viewmodels/Address.view"/>
+
 <file filePath="viewmodels/Member.view"/>
 </extension>
 </plugin>

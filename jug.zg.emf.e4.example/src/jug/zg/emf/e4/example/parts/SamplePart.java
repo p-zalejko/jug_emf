@@ -12,31 +12,18 @@
 package jug.zg.emf.e4.example.parts;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-
-import org.eclipse.e4.ui.di.Focus;
-import org.eclipse.e4.ui.di.Persist;
-import org.eclipse.e4.ui.model.application.ui.MDirtyable;
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecp.ui.view.ECPRendererException;
 import org.eclipse.emf.ecp.ui.view.swt.DefaultReferenceService;
 import org.eclipse.emf.ecp.ui.view.swt.ECPSWTViewRenderer;
 import org.eclipse.emf.ecp.view.spi.context.ViewModelContext;
 import org.eclipse.emf.ecp.view.spi.context.ViewModelContextFactory;
+import org.eclipse.emf.ecp.view.spi.model.VView;
 import org.eclipse.emf.ecp.view.spi.provider.ViewProviderHelper;
 import org.eclipse.jface.layout.GridDataFactory;
 import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.ModifyEvent;
-import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Text;
-
 import demo.Address;
 import demo.DemoFactory;
 import demo.Member;
@@ -45,17 +32,12 @@ public class SamplePart {
 
 	@PostConstruct
 	public void createComposite(Composite parent) {
-		final EObject dummyObject = getDummyEObject();
+		final Member member = getDummyEObject();
 		try {
-			final Composite content = new Composite(parent, SWT.NONE);
-			content.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WHITE));
-			content.setLayout(GridLayoutFactory.fillDefaults().margins(10, 10).create());
-			content.setLayoutData(GridDataFactory.fillDefaults().create());
+			final Composite content = initComposite(parent);
 
-			final ViewModelContext vmc = ViewModelContextFactory.INSTANCE.createViewModelContext(
-					ViewProviderHelper.getView(dummyObject, null), dummyObject, new DefaultReferenceService());
-
-			ECPSWTViewRenderer.INSTANCE.render(content, vmc);
+			final ViewModelContext vmcMember = getViewModel(member);
+			ECPSWTViewRenderer.INSTANCE.render(content, vmcMember);
 			content.layout();
 		} catch (final ECPRendererException e) {
 			e.printStackTrace();
@@ -63,10 +45,23 @@ public class SamplePart {
 		parent.layout();
 	}
 
-	private EObject getDummyEObject() {
-		Address address= DemoFactory.eINSTANCE.createAddress();
+	private Composite initComposite(Composite parent) {
+		final Composite content = new Composite(parent, SWT.NONE);
+		content.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WHITE));
+		content.setLayout(GridLayoutFactory.fillDefaults().margins(10, 10).create());
+ 		content.setLayoutData(GridDataFactory.fillDefaults().create());
+		return content;
+	}
+
+	private ViewModelContext getViewModel(final EObject obj) {
+		VView view = ViewProviderHelper.getView(obj, null);
+		return ViewModelContextFactory.INSTANCE.createViewModelContext(view, obj, new DefaultReferenceService());
+	}
+
+	private Member getDummyEObject() {
+		Address address = DemoFactory.eINSTANCE.createAddress();
 		address.setEmail("foo@bar.pl");
-		
+
 		Member member = DemoFactory.eINSTANCE.createMember();
 		member.setName("abcdr");
 		member.setAddress(address);
