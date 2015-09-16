@@ -102,7 +102,7 @@ public interface DemoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11 = 0;
+	int MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP = 0;
 
 	/**
 	 * The operation id for the '<em>Check Name</em>' operation.
@@ -111,7 +111,7 @@ public interface DemoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11 = 1;
+	int MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP = 1;
 
 	/**
 	 * The number of operations of the '<em>Member</em>' class.
@@ -275,7 +275,7 @@ public interface DemoPackage extends EPackage {
 	 * @see demo.Member#checkAddress(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 */
-	EOperation getMember__CheckAddress__DiagnosticChain_Map_11();
+	EOperation getMember__CheckAddress__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for the '{@link demo.Member#checkName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Check Name</em>}' operation.
@@ -285,7 +285,7 @@ public interface DemoPackage extends EPackage {
 	 * @see demo.Member#checkName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 */
-	EOperation getMember__CheckName__DiagnosticChain_Map_11();
+	EOperation getMember__CheckName__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link demo.Address <em>Address</em>}'.
@@ -427,7 +427,7 @@ public interface DemoPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11 = eINSTANCE.getMember__CheckAddress__DiagnosticChain_Map_11();
+		EOperation MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP = eINSTANCE.getMember__CheckAddress__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Name</b></em>' operation.
@@ -435,7 +435,7 @@ public interface DemoPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11 = eINSTANCE.getMember__CheckName__DiagnosticChain_Map_11();
+		EOperation MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP = eINSTANCE.getMember__CheckName__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link demo.impl.AddressImpl <em>Address</em>}' class.

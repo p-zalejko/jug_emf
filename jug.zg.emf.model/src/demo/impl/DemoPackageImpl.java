@@ -157,7 +157,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getMember__CheckAddress__DiagnosticChain_Map_11() {
+	public EOperation getMember__CheckAddress__DiagnosticChain_Map() {
 		return memberEClass.getEOperations().get(0);
 	}
 
@@ -166,7 +166,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getMember__CheckName__DiagnosticChain_Map_11() {
+	public EOperation getMember__CheckName__DiagnosticChain_Map() {
 		return memberEClass.getEOperations().get(1);
 	}
 
@@ -273,8 +273,8 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		memberEClass = createEClass(MEMBER);
 		createEAttribute(memberEClass, MEMBER__NAME);
 		createEReference(memberEClass, MEMBER__ADDRESS);
-		createEOperation(memberEClass, MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11);
-		createEOperation(memberEClass, MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11);
+		createEOperation(memberEClass, MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP);
+		createEOperation(memberEClass, MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP);
 
 		addressEClass = createEClass(ADDRESS);
 		createEAttribute(addressEClass, ADDRESS__EMAIL);
@@ -323,7 +323,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		initEAttribute(getMember_Name(), this.getMin2Chars(), "name", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMember_Address(), this.getAddress(), null, "address", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		EOperation op = initEOperation(getMember__CheckAddress__DiagnosticChain_Map_11(), ecorePackage.getEBoolean(), "checkAddress", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = initEOperation(getMember__CheckAddress__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "checkAddress", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -332,7 +332,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getMember__CheckName__DiagnosticChain_Map_11(), ecorePackage.getEBoolean(), "checkName", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getMember__CheckName__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "checkName", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -384,6 +384,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		  (memberEClass, 
 		   source, 
 		   new String[] {
+			 "constraints", "checkAddress checkName"
 		   });
 	}
 

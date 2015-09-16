@@ -378,9 +378,9 @@ public class MemberImpl extends EObjectImpl implements Member {
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case DemoPackage.MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP_11:
+			case DemoPackage.MEMBER___CHECK_ADDRESS__DIAGNOSTICCHAIN_MAP:
 				return checkAddress((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case DemoPackage.MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP_11:
+			case DemoPackage.MEMBER___CHECK_NAME__DIAGNOSTICCHAIN_MAP:
 				return checkName((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
 		}
 		return super.eInvoke(operationID, arguments);
