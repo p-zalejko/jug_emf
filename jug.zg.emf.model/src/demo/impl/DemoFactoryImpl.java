@@ -60,6 +60,7 @@ public class DemoFactoryImpl extends EFactoryImpl implements DemoFactory {
 			case DemoPackage.MEMBER: return createMember();
 			case DemoPackage.ADDRESS: return createAddress();
 			case DemoPackage.MEETING: return createMeeting();
+			case DemoPackage.CALENDAR: return createCalendar();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -123,6 +124,16 @@ public class DemoFactoryImpl extends EFactoryImpl implements DemoFactory {
 	public Meeting createMeeting() {
 		MeetingImpl meeting = new MeetingImpl();
 		return meeting;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Calendar createCalendar() {
+		CalendarImpl calendar = new CalendarImpl();
+		return calendar;
 	}
 
 	/**

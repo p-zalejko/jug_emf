@@ -113,6 +113,8 @@ public class DemoValidator extends EObjectValidator {
 				return validateAddress((Address)value, diagnostics, context);
 			case DemoPackage.MEETING:
 				return validateMeeting((Meeting)value, diagnostics, context);
+			case DemoPackage.CALENDAR:
+				return validateCalendar((Calendar)value, diagnostics, context);
 			case DemoPackage.MIN2_CHARS:
 				return validateMin2Chars((String)value, diagnostics, context);
 			default:
@@ -196,6 +198,15 @@ public class DemoValidator extends EObjectValidator {
 	 */
 	public boolean validateMeeting(Meeting meeting, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(meeting, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCalendar(Calendar calendar, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(calendar, diagnostics, context);
 	}
 
 	/**

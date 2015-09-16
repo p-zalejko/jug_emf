@@ -22,4 +22,8 @@ Package demo <http://www.jug.zgora.pl/demo>
     Reference members : Member<<0..*>>
     Operation howManyMembers() : EInt
 
+  Class Calendar
+    Attribute description : EString
+    Reference meetings : Meeting<<0..*>>
+
   DataType Min2Chars <java.lang.String>

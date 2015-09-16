@@ -225,6 +225,52 @@ public interface DemoPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link demo.impl.CalendarImpl <em>Calendar</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see demo.impl.CalendarImpl
+	 * @see demo.impl.DemoPackageImpl#getCalendar()
+	 * @generated
+	 */
+	int CALENDAR = 3;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDAR__DESCRIPTION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Meetings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDAR__MEETINGS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Calendar</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDAR_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Calendar</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDAR_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '<em>Min2 Chars</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -232,7 +278,7 @@ public interface DemoPackage extends EPackage {
 	 * @see demo.impl.DemoPackageImpl#getMin2Chars()
 	 * @generated
 	 */
-	int MIN2_CHARS = 3;
+	int MIN2_CHARS = 4;
 
 
 	/**
@@ -359,6 +405,38 @@ public interface DemoPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getMeeting__HowManyMembers();
+
+	/**
+	 * Returns the meta object for class '{@link demo.Calendar <em>Calendar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Calendar</em>'.
+	 * @see demo.Calendar
+	 * @generated
+	 */
+	EClass getCalendar();
+
+	/**
+	 * Returns the meta object for the attribute '{@link demo.Calendar#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see demo.Calendar#getDescription()
+	 * @see #getCalendar()
+	 * @generated
+	 */
+	EAttribute getCalendar_Description();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link demo.Calendar#getMeetings <em>Meetings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Meetings</em>'.
+	 * @see demo.Calendar#getMeetings()
+	 * @see #getCalendar()
+	 * @generated
+	 */
+	EReference getCalendar_Meetings();
 
 	/**
 	 * Returns the meta object for data type '{@link java.lang.String <em>Min2 Chars</em>}'.
@@ -496,6 +574,32 @@ public interface DemoPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation MEETING___HOW_MANY_MEMBERS = eINSTANCE.getMeeting__HowManyMembers();
+
+		/**
+		 * The meta object literal for the '{@link demo.impl.CalendarImpl <em>Calendar</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see demo.impl.CalendarImpl
+		 * @see demo.impl.DemoPackageImpl#getCalendar()
+		 * @generated
+		 */
+		EClass CALENDAR = eINSTANCE.getCalendar();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALENDAR__DESCRIPTION = eINSTANCE.getCalendar_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Meetings</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALENDAR__MEETINGS = eINSTANCE.getCalendar_Meetings();
 
 		/**
 		 * The meta object literal for the '<em>Min2 Chars</em>' data type.

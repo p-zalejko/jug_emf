@@ -66,6 +66,7 @@ public class DemoTables
     public static final /*@NonNull*/ /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore = IdManager.getNsURIPackageId("http://www.eclipse.org/emf/2002/Ecore", null, EcorePackage.eINSTANCE);
     public static final /*@NonNull*/ /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_jug_zgora_pl_s_demo = IdManager.getNsURIPackageId("http://www.jug.zgora.pl/demo", null, DemoPackage.eINSTANCE);
     public static final /*@NonNull*/ /*@NonInvalid*/ ClassId CLSSid_Address = DemoTables.PACKid_http_c_s_s_www_jug_zgora_pl_s_demo.getClassId("Address", 0);
+    public static final /*@NonNull*/ /*@NonInvalid*/ ClassId CLSSid_Calendar = DemoTables.PACKid_http_c_s_s_www_jug_zgora_pl_s_demo.getClassId("Calendar", 0);
     public static final /*@NonNull*/ /*@NonInvalid*/ ClassId CLSSid_Meeting = DemoTables.PACKid_http_c_s_s_www_jug_zgora_pl_s_demo.getClassId("Meeting", 0);
     public static final /*@NonNull*/ /*@NonInvalid*/ ClassId CLSSid_Member = DemoTables.PACKid_http_c_s_s_www_jug_zgora_pl_s_demo.getClassId("Member", 0);
     public static final /*@NonNull*/ /*@NonInvalid*/ DataTypeId DATAid_EInt = DemoTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EInt", 0);
@@ -74,6 +75,7 @@ public class DemoTables
     public static final /*@NonNull*/ /*@NonInvalid*/ String STR_Member_c_c_checkAddress = "Member::checkAddress";
     public static final /*@NonNull*/ /*@NonInvalid*/ String STR_Member_c_c_checkName = "Member::checkName";
     public static final /*@NonNull*/ /*@NonInvalid*/ CollectionTypeId BAG_CLSSid_Meeting = TypeId.BAG.getSpecializedId(DemoTables.CLSSid_Meeting);
+    public static final /*@NonNull*/ /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Meeting = TypeId.ORDERED_SET.getSpecializedId(DemoTables.CLSSid_Meeting);
     public static final /*@NonNull*/ /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Member = TypeId.ORDERED_SET.getSpecializedId(DemoTables.CLSSid_Member);
 
 	/**
@@ -105,12 +107,14 @@ public class DemoTables
 		}
 
 		public static final /*@NonNull*/ EcoreExecutorType _Address = new EcoreExecutorType(DemoPackage.Literals.ADDRESS, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Calendar = new EcoreExecutorType(DemoPackage.Literals.CALENDAR, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Meeting = new EcoreExecutorType(DemoPackage.Literals.MEETING, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Member = new EcoreExecutorType(DemoPackage.Literals.MEMBER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Min2Chars = new EcoreExecutorType("Min2Chars", PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType[] types = {
 			_Address,
+			_Calendar,
 			_Meeting,
 			_Member,
 			_Min2Chars
@@ -142,6 +146,10 @@ public class DemoTables
 		private static final /*@NonNull*/ ExecutorFragment _Address__Address = new ExecutorFragment(Types._Address, DemoTables.Types._Address);
 		private static final /*@NonNull*/ ExecutorFragment _Address__OclAny = new ExecutorFragment(Types._Address, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Address__OclElement = new ExecutorFragment(Types._Address, OCLstdlibTables.Types._OclElement);
+
+		private static final /*@NonNull*/ ExecutorFragment _Calendar__Calendar = new ExecutorFragment(Types._Calendar, DemoTables.Types._Calendar);
+		private static final /*@NonNull*/ ExecutorFragment _Calendar__OclAny = new ExecutorFragment(Types._Calendar, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Calendar__OclElement = new ExecutorFragment(Types._Calendar, OCLstdlibTables.Types._OclElement);
 
 		private static final /*@NonNull*/ ExecutorFragment _Meeting__Meeting = new ExecutorFragment(Types._Meeting, DemoTables.Types._Meeting);
 		private static final /*@NonNull*/ ExecutorFragment _Meeting__OclAny = new ExecutorFragment(Types._Meeting, OCLstdlibTables.Types._OclAny);
@@ -223,8 +231,12 @@ public class DemoTables
 		public static final /*@NonNull*/ ExecutorProperty _Address__email = new EcoreExecutorProperty(DemoPackage.Literals.ADDRESS__EMAIL, Types._Address, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Address__Member__address = new ExecutorPropertyWithImplementation("Member", Types._Address, 1, new EcoreLibraryOppositeProperty(DemoPackage.Literals.MEMBER__ADDRESS));
 
+		public static final /*@NonNull*/ ExecutorProperty _Calendar__description = new EcoreExecutorProperty(DemoPackage.Literals.CALENDAR__DESCRIPTION, Types._Calendar, 0);
+		public static final /*@NonNull*/ ExecutorProperty _Calendar__meetings = new EcoreExecutorProperty(DemoPackage.Literals.CALENDAR__MEETINGS, Types._Calendar, 1);
+
 		public static final /*@NonNull*/ ExecutorProperty _Meeting__members = new EcoreExecutorProperty(DemoPackage.Literals.MEETING__MEMBERS, Types._Meeting, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Meeting__name = new EcoreExecutorProperty(DemoPackage.Literals.MEETING__NAME, Types._Meeting, 1);
+		public static final /*@NonNull*/ ExecutorProperty _Meeting__Calendar__meetings = new ExecutorPropertyWithImplementation("Calendar", Types._Meeting, 2, new EcoreLibraryOppositeProperty(DemoPackage.Literals.CALENDAR__MEETINGS));
 
 		public static final /*@NonNull*/ ExecutorProperty _Member__address = new EcoreExecutorProperty(DemoPackage.Literals.MEMBER__ADDRESS, Types._Member, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Member__name = new EcoreExecutorProperty(DemoPackage.Literals.MEMBER__NAME, Types._Member, 1);
@@ -255,6 +267,14 @@ public class DemoTables
 			Fragments._Address__Address /* 2 */
 		};
 		private static final /*@NonNull*/ int[] __Address = { 1,1,1 };
+
+		private static final /*@NonNull*/ ExecutorFragment[] _Calendar =
+		{
+			Fragments._Calendar__OclAny /* 0 */,
+			Fragments._Calendar__OclElement /* 1 */,
+			Fragments._Calendar__Calendar /* 2 */
+		};
+		private static final /*@NonNull*/ int[] __Calendar = { 1,1,1 };
 
 		private static final /*@NonNull*/ ExecutorFragment[] _Meeting =
 		{
@@ -288,6 +308,7 @@ public class DemoTables
 		 */
 		static {
 			Types._Address.initFragments(_Address, __Address);
+			Types._Calendar.initFragments(_Calendar, __Calendar);
 			Types._Meeting.initFragments(_Meeting, __Meeting);
 			Types._Member.initFragments(_Member, __Member);
 			Types._Min2Chars.initFragments(_Min2Chars, __Min2Chars);
@@ -328,6 +349,29 @@ public class DemoTables
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation[] _Address__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */
+		};
+
+		private static final /*@NonNull*/ ExecutorOperation[] _Calendar__Calendar = {};
+		private static final /*@NonNull*/ ExecutorOperation[] _Calendar__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation[] _Calendar__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
 			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */
@@ -460,6 +504,10 @@ public class DemoTables
 			Fragments._Address__OclAny.initOperations(_Address__OclAny);
 			Fragments._Address__OclElement.initOperations(_Address__OclElement);
 
+			Fragments._Calendar__Calendar.initOperations(_Calendar__Calendar);
+			Fragments._Calendar__OclAny.initOperations(_Calendar__OclAny);
+			Fragments._Calendar__OclElement.initOperations(_Calendar__OclElement);
+
 			Fragments._Meeting__Meeting.initOperations(_Meeting__Meeting);
 			Fragments._Meeting__OclAny.initOperations(_Meeting__OclAny);
 			Fragments._Meeting__OclElement.initOperations(_Meeting__OclElement);
@@ -498,9 +546,15 @@ public class DemoTables
 			DemoTables.Properties._Address__Member__address
 		};
 
+		private static final /*@NonNull*/ ExecutorProperty[] _Calendar = {
+			DemoTables.Properties._Calendar__description,
+			DemoTables.Properties._Calendar__meetings
+		};
+
 		private static final /*@NonNull*/ ExecutorProperty[] _Meeting = {
 			DemoTables.Properties._Meeting__members,
-			DemoTables.Properties._Meeting__name
+			DemoTables.Properties._Meeting__name,
+			DemoTables.Properties._Meeting__Calendar__meetings
 		};
 
 		private static final /*@NonNull*/ ExecutorProperty[] _Member = {
@@ -516,6 +570,7 @@ public class DemoTables
 		 */
 		static {
 			Fragments._Address__Address.initProperties(_Address);
+			Fragments._Calendar__Calendar.initProperties(_Calendar);
 			Fragments._Meeting__Meeting.initProperties(_Meeting);
 			Fragments._Member__Member.initProperties(_Member);
 			Fragments._Min2Chars__Min2Chars.initProperties(_Min2Chars);

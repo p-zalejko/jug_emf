@@ -25,5 +25,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference demo.ecore#//Meeting/members"/>
       <genOperations ecoreOperation="demo.ecore#//Meeting/howManyMembers"/>
     </genClasses>
+    <genClasses ecoreClass="demo.ecore#//Calendar">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute demo.ecore#//Calendar/description"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference demo.ecore#//Calendar/meetings"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

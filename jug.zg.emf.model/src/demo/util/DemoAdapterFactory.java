@@ -80,6 +80,10 @@ public class DemoAdapterFactory extends AdapterFactoryImpl {
 				return createMeetingAdapter();
 			}
 			@Override
+			public Adapter caseCalendar(Calendar object) {
+				return createCalendarAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -138,6 +142,20 @@ public class DemoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMeetingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link demo.Calendar <em>Calendar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see demo.Calendar
+	 * @generated
+	 */
+	public Adapter createCalendarAdapter() {
 		return null;
 	}
 

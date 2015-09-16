@@ -3,6 +3,7 @@
 package demo.impl;
 
 import demo.Address;
+import demo.Calendar;
 import demo.DemoFactory;
 import demo.DemoPackage;
 import demo.Meeting;
@@ -47,6 +48,13 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * @generated
 	 */
 	private EClass meetingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass calendarEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,6 +246,33 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCalendar() {
+		return calendarEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCalendar_Description() {
+		return (EAttribute)calendarEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCalendar_Meetings() {
+		return (EReference)calendarEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EDataType getMin2Chars() {
 		return min2CharsEDataType;
 	}
@@ -284,6 +319,10 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		createEAttribute(meetingEClass, MEETING__NAME);
 		createEReference(meetingEClass, MEETING__MEMBERS);
 		createEOperation(meetingEClass, MEETING___HOW_MANY_MEMBERS);
+
+		calendarEClass = createEClass(CALENDAR);
+		createEAttribute(calendarEClass, CALENDAR__DESCRIPTION);
+		createEReference(calendarEClass, CALENDAR__MEETINGS);
 
 		// Create data types
 		min2CharsEDataType = createEDataType(MIN2_CHARS);
@@ -353,6 +392,10 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		initEReference(getMeeting_Members(), this.getMember(), null, "members", null, 0, -1, Meeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getMeeting__HowManyMembers(), ecorePackage.getEInt(), "howManyMembers", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(calendarEClass, Calendar.class, "Calendar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCalendar_Description(), ecorePackage.getEString(), "description", null, 0, 1, Calendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalendar_Meetings(), this.getMeeting(), null, "meetings", null, 0, -1, Calendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize data types
 		initEDataType(min2CharsEDataType, String.class, "Min2Chars", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

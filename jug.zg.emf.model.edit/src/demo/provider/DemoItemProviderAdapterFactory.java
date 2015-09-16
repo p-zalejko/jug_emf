@@ -141,6 +141,29 @@ public class DemoItemProviderAdapterFactory extends DemoAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link demo.Calendar} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CalendarItemProvider calendarItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link demo.Calendar}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCalendarAdapter() {
+		if (calendarItemProvider == null) {
+			calendarItemProvider = new CalendarItemProvider(this);
+		}
+
+		return calendarItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -242,6 +265,7 @@ public class DemoItemProviderAdapterFactory extends DemoAdapterFactory implement
 		if (memberItemProvider != null) memberItemProvider.dispose();
 		if (addressItemProvider != null) addressItemProvider.dispose();
 		if (meetingItemProvider != null) meetingItemProvider.dispose();
+		if (calendarItemProvider != null) calendarItemProvider.dispose();
 	}
 
 }
