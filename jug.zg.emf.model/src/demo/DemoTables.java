@@ -233,6 +233,7 @@ public class DemoTables
 
 		public static final /*@NonNull*/ ExecutorProperty _Calendar__description = new EcoreExecutorProperty(DemoPackage.Literals.CALENDAR__DESCRIPTION, Types._Calendar, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Calendar__meetings = new EcoreExecutorProperty(DemoPackage.Literals.CALENDAR__MEETINGS, Types._Calendar, 1);
+		public static final /*@NonNull*/ ExecutorProperty _Calendar__members = new EcoreExecutorProperty(DemoPackage.Literals.CALENDAR__MEMBERS, Types._Calendar, 2);
 
 		public static final /*@NonNull*/ ExecutorProperty _Meeting__members = new EcoreExecutorProperty(DemoPackage.Literals.MEETING__MEMBERS, Types._Meeting, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Meeting__name = new EcoreExecutorProperty(DemoPackage.Literals.MEETING__NAME, Types._Meeting, 1);
@@ -240,7 +241,8 @@ public class DemoTables
 
 		public static final /*@NonNull*/ ExecutorProperty _Member__address = new EcoreExecutorProperty(DemoPackage.Literals.MEMBER__ADDRESS, Types._Member, 0);
 		public static final /*@NonNull*/ ExecutorProperty _Member__name = new EcoreExecutorProperty(DemoPackage.Literals.MEMBER__NAME, Types._Member, 1);
-		public static final /*@NonNull*/ ExecutorProperty _Member__Meeting__members = new ExecutorPropertyWithImplementation("Meeting", Types._Member, 2, new EcoreLibraryOppositeProperty(DemoPackage.Literals.MEETING__MEMBERS));
+		public static final /*@NonNull*/ ExecutorProperty _Member__Calendar__members = new ExecutorPropertyWithImplementation("Calendar", Types._Member, 2, new EcoreLibraryOppositeProperty(DemoPackage.Literals.CALENDAR__MEMBERS));
+		public static final /*@NonNull*/ ExecutorProperty _Member__Meeting__members = new ExecutorPropertyWithImplementation("Meeting", Types._Member, 3, new EcoreLibraryOppositeProperty(DemoPackage.Literals.MEETING__MEMBERS));
 		static {
 			Init.initEnd();
 		}
@@ -548,7 +550,8 @@ public class DemoTables
 
 		private static final /*@NonNull*/ ExecutorProperty[] _Calendar = {
 			DemoTables.Properties._Calendar__description,
-			DemoTables.Properties._Calendar__meetings
+			DemoTables.Properties._Calendar__meetings,
+			DemoTables.Properties._Calendar__members
 		};
 
 		private static final /*@NonNull*/ ExecutorProperty[] _Meeting = {
@@ -560,6 +563,7 @@ public class DemoTables
 		private static final /*@NonNull*/ ExecutorProperty[] _Member = {
 			DemoTables.Properties._Member__address,
 			DemoTables.Properties._Member__name,
+			DemoTables.Properties._Member__Calendar__members,
 			DemoTables.Properties._Member__Meeting__members
 		};
 

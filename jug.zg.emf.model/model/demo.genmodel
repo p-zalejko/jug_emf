@@ -28,6 +28,7 @@
     <genClasses ecoreClass="demo.ecore#//Calendar">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute demo.ecore#//Calendar/description"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference demo.ecore#//Calendar/meetings"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference demo.ecore#//Calendar/member"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -25,5 +25,6 @@ Package demo <http://www.jug.zgora.pl/demo>
   Class Calendar
     Attribute description : EString
     Reference meetings : Meeting<<0..*>>
+    Reference members : Member<<0..*>>
 
   DataType Min2Chars <java.lang.String>

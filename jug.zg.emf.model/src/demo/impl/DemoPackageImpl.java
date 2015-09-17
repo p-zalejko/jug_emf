@@ -273,6 +273,15 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getCalendar_Members() {
+		return (EReference)calendarEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EDataType getMin2Chars() {
 		return min2CharsEDataType;
 	}
@@ -323,6 +332,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		calendarEClass = createEClass(CALENDAR);
 		createEAttribute(calendarEClass, CALENDAR__DESCRIPTION);
 		createEReference(calendarEClass, CALENDAR__MEETINGS);
+		createEReference(calendarEClass, CALENDAR__MEMBERS);
 
 		// Create data types
 		min2CharsEDataType = createEDataType(MIN2_CHARS);
@@ -396,6 +406,7 @@ public class DemoPackageImpl extends EPackageImpl implements DemoPackage {
 		initEClass(calendarEClass, Calendar.class, "Calendar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalendar_Description(), ecorePackage.getEString(), "description", null, 0, 1, Calendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCalendar_Meetings(), this.getMeeting(), null, "meetings", null, 0, -1, Calendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalendar_Members(), this.getMember(), null, "members", null, 0, -1, Calendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize data types
 		initEDataType(min2CharsEDataType, String.class, "Min2Chars", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

@@ -253,13 +253,22 @@ public interface DemoPackage extends EPackage {
 	int CALENDAR__MEETINGS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Members</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDAR__MEMBERS = 2;
+
+	/**
 	 * The number of structural features of the '<em>Calendar</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALENDAR_FEATURE_COUNT = 2;
+	int CALENDAR_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Calendar</em>' class.
@@ -439,6 +448,17 @@ public interface DemoPackage extends EPackage {
 	EReference getCalendar_Meetings();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link demo.Calendar#getMembers <em>Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Members</em>'.
+	 * @see demo.Calendar#getMembers()
+	 * @see #getCalendar()
+	 * @generated
+	 */
+	EReference getCalendar_Members();
+
+	/**
 	 * Returns the meta object for data type '{@link java.lang.String <em>Min2 Chars</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -600,6 +620,14 @@ public interface DemoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALENDAR__MEETINGS = eINSTANCE.getCalendar_Meetings();
+
+		/**
+		 * The meta object literal for the '<em><b>Members</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALENDAR__MEMBERS = eINSTANCE.getCalendar_Members();
 
 		/**
 		 * The meta object literal for the '<em>Min2 Chars</em>' data type.

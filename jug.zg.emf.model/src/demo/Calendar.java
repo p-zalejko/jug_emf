@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link demo.Calendar#getDescription <em>Description</em>}</li>
  *   <li>{@link demo.Calendar#getMeetings <em>Meetings</em>}</li>
+ *   <li>{@link demo.Calendar#getMembers <em>Members</em>}</li>
  * </ul>
  *
  * @see demo.DemoPackage#getCalendar()
@@ -66,5 +67,22 @@ public interface Calendar extends EObject {
 	 * @generated
 	 */
 	EList<Meeting> getMeetings();
+
+	/**
+	 * Returns the value of the '<em><b>Members</b></em>' containment reference list.
+	 * The list contents are of type {@link demo.Member}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Members</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Members</em>' containment reference list.
+	 * @see demo.DemoPackage#getCalendar_Members()
+	 * @model containment="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://www.jug.zgora.pl/demo!Calendar!members'"
+	 * @generated
+	 */
+	EList<Member> getMembers();
 
 } // Calendar

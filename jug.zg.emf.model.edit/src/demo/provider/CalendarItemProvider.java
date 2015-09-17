@@ -126,6 +126,7 @@ public class CalendarItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(DemoPackage.Literals.CALENDAR__MEETINGS);
+			childrenFeatures.add(DemoPackage.Literals.CALENDAR__MEMBERS);
 		}
 		return childrenFeatures;
 	}
@@ -185,6 +186,7 @@ public class CalendarItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case DemoPackage.CALENDAR__MEETINGS:
+			case DemoPackage.CALENDAR__MEMBERS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -206,6 +208,11 @@ public class CalendarItemProvider
 			(createChildParameter
 				(DemoPackage.Literals.CALENDAR__MEETINGS,
 				 DemoFactory.eINSTANCE.createMeeting()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DemoPackage.Literals.CALENDAR__MEMBERS,
+				 DemoFactory.eINSTANCE.createMember()));
 	}
 
 	/**

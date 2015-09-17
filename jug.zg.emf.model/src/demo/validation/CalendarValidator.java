@@ -6,6 +6,7 @@ package demo.validation;
 
 import demo.Meeting;
 
+import demo.Member;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -19,4 +20,8 @@ public interface CalendarValidator {
 
 	boolean validateDescription(String value);
 	boolean validateMeetings(EList<Meeting> value);
+
+	boolean validateMembers(EList<Member> value);
+
+	boolean validateMember(EList<Member> value);
 }

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: jug.zg.emf.sirius.example.design
+Bundle-SymbolicName: jug.zg.emf.sirius.example.design;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: jug.zg.emf.sirius.example.design.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.mtl,
+ jug.zg.emf.model
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

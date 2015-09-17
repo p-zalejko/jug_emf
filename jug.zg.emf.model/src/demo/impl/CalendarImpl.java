@@ -6,6 +6,7 @@ import demo.Calendar;
 import demo.DemoPackage;
 import demo.Meeting;
 
+import demo.Member;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -32,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link demo.impl.CalendarImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link demo.impl.CalendarImpl#getMeetings <em>Meetings</em>}</li>
+ *   <li>{@link demo.impl.CalendarImpl#getMembers <em>Members</em>}</li>
  * </ul>
  *
  * @generated
@@ -66,6 +68,16 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 	 * @ordered
 	 */
 	protected EList<Meeting> meetings;
+
+	/**
+	 * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMembers()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Member> members;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,11 +136,25 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Member> getMembers() {
+		if (members == null) {
+			members = new EObjectContainmentEList<Member>(Member.class, this, DemoPackage.CALENDAR__MEMBERS);
+		}
+		return members;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case DemoPackage.CALENDAR__MEETINGS:
 				return ((InternalEList<?>)getMeetings()).basicRemove(otherEnd, msgs);
+			case DemoPackage.CALENDAR__MEMBERS:
+				return ((InternalEList<?>)getMembers()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -145,6 +171,8 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 				return getDescription();
 			case DemoPackage.CALENDAR__MEETINGS:
 				return getMeetings();
+			case DemoPackage.CALENDAR__MEMBERS:
+				return getMembers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -165,6 +193,10 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 				getMeetings().clear();
 				getMeetings().addAll((Collection<? extends Meeting>)newValue);
 				return;
+			case DemoPackage.CALENDAR__MEMBERS:
+				getMembers().clear();
+				getMembers().addAll((Collection<? extends Member>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -183,6 +215,9 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 			case DemoPackage.CALENDAR__MEETINGS:
 				getMeetings().clear();
 				return;
+			case DemoPackage.CALENDAR__MEMBERS:
+				getMembers().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -199,6 +234,8 @@ public class CalendarImpl extends EObjectImpl implements Calendar {
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case DemoPackage.CALENDAR__MEETINGS:
 				return meetings != null && !meetings.isEmpty();
+			case DemoPackage.CALENDAR__MEMBERS:
+				return members != null && !members.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
