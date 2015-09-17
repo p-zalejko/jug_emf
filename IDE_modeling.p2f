@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?p2f version='1.0.0'?>
+<p2f version='1.0.0'>
+  <ius size='34'>
+    <iu id='epp.package.modeling' name='Eclipse Modeling Tools' version='4.5.0.20150621-1200'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group' name='EMF Forms SDK' version='1.6.1.20150626-1237'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/ecp/releases/releases_16/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.emf.validation.examples.feature.group' name='EMF Validation Framework Examples' version='1.9.0.201505312255'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.emf.validation.master.feature.group' name='EMF Validation Framework SDK and Examples' version='1.9.0.201505312255'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.ocl.examples.feature.group' name='OCL Examples and Editors SDK' version='6.0.0.v20150608-1714'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.tests.support.feature.group' name='Sirius APIs and Runtime for Automated Tests' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.tests.support.source.feature.group' name='Sirius APIs and Runtime for Automated Tests Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.source.feature.group' name='Sirius Core Runtime Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.doc.feature.source.feature.group' name='Sirius Documentation Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.ide.ui.acceleo.source.feature.group' name='Sirius IDE Support for Acceleo Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.ide.eef.source.feature.group' name='Sirius Integration with EEF Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.ide.xtext.source.feature.group' name='Sirius Integration with Xtext Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.ide.ui.source.feature.group' name='Sirius Runtime IDE Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.acceleo.source.feature.group' name='Sirius Runtime Support for Acceleo 3 Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.aql.source.feature.group' name='Sirius Runtime Support for AQL (Experimental) Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.runtime.ocl.source.feature.group' name='Sirius Runtime Support for OCL Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.samples.feature.group' name='Sirius Samples' version='3.0.0.201506090807'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.samples.source.feature.group' name='Sirius Samples Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.specifier.ide.ui.acceleo.source.feature.group' name='Sirius Specification Editor Support for Acceleo Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.specifier.ide.ui.aql.source.feature.group' name='Sirius Specification Editor Support for AQL (Experimental) Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.specifier.ide.ui.source.feature.group' name='Sirius Specification Environment Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.specifier.feature.group' name='Sirius Specifier Environment' version='3.0.0.201506090807'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.sirius.specifier.source.feature.group' name='Sirius Specifier Environment Developer Resources' version='3.0.0.201506090807'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/sirius/updates/releases/3.0.0/mars'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.rcp.feature.feature.group' name='SWT Designer' version='1.8.0.r45x201506110827'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.swt.feature.feature.group' name='SWT Designer Core' version='1.8.0.r45x201506110825'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.rcp.doc.user.feature.feature.group' name='SWT Designer Documentation' version='1.8.0.r45x201506110839'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.rcp.SWT_AWT_support.feature.group' name='SWT Designer SWT_AWT Support' version='1.8.0.r45x201506110828'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.xwt.feature.feature.group' name='SWT Designer XWT Support (requires Eclipse WTP/WST)' version='1.8.0.r45x201506110829'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.core.feature.feature.group' name='WindowBuilder Core' version='1.8.0.r45x201506110820'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.doc.user.feature.feature.group' name='WindowBuilder Core Documentation' version='1.8.0.r45x201506110838'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.core.ui.feature.feature.group' name='WindowBuilder Core UI' version='1.8.0.r45x201506110822'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.layout.group.feature.feature.group' name='WindowBuilder GroupLayout Support' version='1.8.0.r45x201506110824'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.core.java.feature.feature.group' name='WindowBuilder Java Core' version='1.8.0.r45x201506110821'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.wb.core.xml.feature.feature.group' name='WindowBuilder XML Core (requires Eclipse WTP/WST)' version='1.8.0.r45x201506110823'>
+      <repositories size='3'>
+        <repository location='http://download.eclipse.org/releases/mars'/>
+        <repository location='http://download.eclipse.org/windowbuilder/WB/release/R201506241200-1/4.5/'/>
+        <repository location='http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/mars/'/>
+      </repositories>
+    </iu>
+  </ius>
+</p2f>
