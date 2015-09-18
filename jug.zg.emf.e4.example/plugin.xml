@@ -9,7 +9,7 @@
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="applicationCSS"
-               value="platform:/plugin/jug.zg.emf.e4.example/css/default.css">
+               value="platform:/plugin/jug.zg.emf.example.e4/css/default.css">
          </property>
          <property
                name="appName"
@@ -17,11 +17,4 @@
          </property>
       </product>
    </extension>
-
-
-<extension  point="org.eclipse.emf.ecp.view.model.provider.xmi.file">
-<file filePath="viewmodels/Address.view"/>
-
-<file filePath="viewmodels/Member.view"/>
-</extension>
 </plugin>
