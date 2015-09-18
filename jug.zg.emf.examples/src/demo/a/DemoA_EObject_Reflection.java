@@ -44,7 +44,7 @@ public class DemoA_EObject_Reflection extends AbstractDemo {
 	public void addAddressToMember(Address address, Member member) {
 		// super.addAddressToMember(address, member);
 		member.eSet(DemoPackage.Literals.MEMBER__ADDRESS, address);
-		System.out.println("Added an address vis 'eSet' method.");
+		System.out.println("Added an address via 'eSet' method.");
 	}
  
 
