@@ -35,6 +35,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setInitialSize(new Point(800, 500));
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(false);
-		configurer.setTitle("MakeItHappen ECP Sample e3 Application"); //$NON-NLS-1$
+		configurer.setTitle("JUG Sample RAP Application"); //$NON-NLS-1$
 	}
 }
