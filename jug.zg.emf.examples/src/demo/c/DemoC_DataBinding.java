@@ -23,6 +23,7 @@ public class DemoC_DataBinding extends AbstractDemo {
 			public void run() {
 				Display display = Display.getDefault();
 				Shell shell = new Shell(display);
+				shell.setSize(600, 300);
 				shell.setLayout(new FillLayout());
 				new SimpleUiComposite(shell, SWT.NONE);
 

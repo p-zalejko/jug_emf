@@ -23,6 +23,7 @@ public class DemoC_Validation extends AbstractDemo {
 			public void run() {
 				Display display = Display.getDefault();
 				Shell shell = new Shell(display);
+				shell.setSize(600, 300);
 				shell.setLayout(new FillLayout());
 				new SimpleUiCompositeWithValidation(shell, SWT.NONE);
 
