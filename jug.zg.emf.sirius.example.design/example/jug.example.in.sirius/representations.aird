@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:demo="http://www.jug.zgora.pl/demo" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_lQFEkIE7EeWZlOvZSMGgzw" selectedViews="_wuGnEIE7EeWZlOvZSMGgzw" version="10.0.0.201505222000">
+  <semanticResources>calendars.demo</semanticResources>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_wuGnEIE7EeWZlOvZSMGgzw">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_zM7Z8IE7EeWZlOvZSMGgzw" name="Calendars diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zM7Z8YE7EeWZlOvZSMGgzw" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_zM7Z8oE7EeWZlOvZSMGgzw"/>
+      </ownedAnnotationEntries>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zN0KwIE7EeWZlOvZSMGgzw" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_zN0KwYE7EeWZlOvZSMGgzw" type="Sirius" element="_zM7Z8IE7EeWZlOvZSMGgzw" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_zN_w8IE7EeWZlOvZSMGgzw" type="2001" element="_zM7Z84E7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zOPokIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_zOPokYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zO6W8IE7EeWZlOvZSMGgzw" type="3005" element="_zM7Z9IE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zO6W8YE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO6W8oE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zN_w8YE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zN_w8oE7EeWZlOvZSMGgzw" x="96" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zOhVYIE7EeWZlOvZSMGgzw" type="2001" element="_zM7Z9YE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zOjKkIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_zOjKkYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zO8MIIE7EeWZlOvZSMGgzw" type="3005" element="_zM7Z9oE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zO8MIYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO8MIoE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zOhVYYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOhVYoE7EeWZlOvZSMGgzw" x="324" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zOsUgIE7EeWZlOvZSMGgzw" type="2001" element="_zM7Z94E7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zOtioIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_zOtioYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zO9aQIE7EeWZlOvZSMGgzw" type="3005" element="_zM7Z-IE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zO9aQYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO9aQoE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zOsUgYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOsUgoE7EeWZlOvZSMGgzw" x="60" y="216" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zOxNAIE7EeWZlOvZSMGgzw" type="2001" element="_zM8BAoE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zOx0EIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_zOx0EYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zO_PcIE7EeWZlOvZSMGgzw" type="3005" element="_zM8BA4E7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PcYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO_PcoE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zOxNAYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOxNAoE7EeWZlOvZSMGgzw" x="216" y="240" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zO0QUIE7EeWZlOvZSMGgzw" type="2001" element="_zM8BBIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zO1ecIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_zO1ecYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zPAdkIE7EeWZlOvZSMGgzw" type="3005" element="_zM8BBYE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zPAdkYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPAdkoE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zO0QUYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO0QUoE7EeWZlOvZSMGgzw" x="528" y="204" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2xE2IIE7EeWZlOvZSMGgzw" type="2001" element="_2wwtEIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_2xJHkIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_2xJHkYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_2xOAEIE7EeWZlOvZSMGgzw" type="3005" element="_2wxUIIE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_2xOAEYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2xOAEoE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_2xE2IYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2xE2IoE7EeWZlOvZSMGgzw" x="818" y="56" width="48" height="48"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_36WLUIE7EeWZlOvZSMGgzw" type="2001" element="_36CpUIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_36WyYIE7EeWZlOvZSMGgzw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_36WyYYE7EeWZlOvZSMGgzw" x="-1" y="-21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_36ZOoIE7EeWZlOvZSMGgzw" type="3005" element="_36DQYIE7EeWZlOvZSMGgzw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_36ZOoYE7EeWZlOvZSMGgzw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_36ZOooE7EeWZlOvZSMGgzw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_36WLUYE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_36WLUoE7EeWZlOvZSMGgzw" x="858" y="189" width="48" height="48"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_zN0KwoE7EeWZlOvZSMGgzw"/>
+          <edges xmi:type="notation:Edge" xmi:id="_zPWb0IE7EeWZlOvZSMGgzw" type="4001" element="_zM8BBoE7EeWZlOvZSMGgzw" source="_zOsUgIE7EeWZlOvZSMGgzw" target="_zN_w8IE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zPb7YIE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPb7YYE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zPdwkIE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPdwkYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zPpWwIE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPpWwYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_zPWb0YE7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_zPWb0oE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zPWb04E7EeWZlOvZSMGgzw" points="[0, 2, -36, 170]$[36, -168, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP088IE7EeWZlOvZSMGgzw" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP1kAIE7EeWZlOvZSMGgzw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_zP2yIIE7EeWZlOvZSMGgzw" type="4001" element="_zM8BCYE7EeWZlOvZSMGgzw" source="_zOxNAIE7EeWZlOvZSMGgzw" target="_zN_w8IE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zP4AQIE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP4AQYE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP4AQoE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP4AQ4E7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP4nUIE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP4nUYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_zP2yIYE7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_zP2yIoE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zP2yI4E7EeWZlOvZSMGgzw" points="[0, 2, 120, 194]$[-120, -192, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP5OYIE7EeWZlOvZSMGgzw" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP51cIE7EeWZlOvZSMGgzw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_zP51cYE7EeWZlOvZSMGgzw" type="4001" element="_zM8BDIE7EeWZlOvZSMGgzw" source="_zOxNAIE7EeWZlOvZSMGgzw" target="_zOhVYIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zP7DkIE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP7DkYE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP7DkoE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP7Dk4E7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP7qoIE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP7qoYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_zP51coE7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_zP51c4E7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zP51dIE7EeWZlOvZSMGgzw" points="[0, 0, -108, 192]$[108, -193, 0, -1]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP8RsIE7EeWZlOvZSMGgzw" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP8RsYE7EeWZlOvZSMGgzw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_zP84wIE7EeWZlOvZSMGgzw" type="4001" element="_zM8BD4E7EeWZlOvZSMGgzw" source="_zO0QUIE7EeWZlOvZSMGgzw" target="_zN_w8IE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zP9f0IE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP9f0YE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP-G4IE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP-G4YE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zP-G4oE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zP-G44E7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_zP84wYE7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_zP84woE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zP84w4E7EeWZlOvZSMGgzw" points="[0, 2, 432, 158]$[-432, -156, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP_VAIE7EeWZlOvZSMGgzw" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zP_VAYE7EeWZlOvZSMGgzw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_zP_VAoE7EeWZlOvZSMGgzw" type="4001" element="_zM8BEoE7EeWZlOvZSMGgzw" source="_zO0QUIE7EeWZlOvZSMGgzw" target="_zOhVYIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_zQAjIIE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQAjIYE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zQAjIoE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQAjI4E7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zQBKMIE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQBKMYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_zP_VA4E7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_zP_VBIE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zP_VBYE7EeWZlOvZSMGgzw" points="[0, 0, 204, 156]$[-204, -157, 0, -1]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zQBxQIE7EeWZlOvZSMGgzw" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zQBxQYE7EeWZlOvZSMGgzw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_3c1v8IE7EeWZlOvZSMGgzw" type="4001" element="_3ckqMIE7EeWZlOvZSMGgzw" source="_2xE2IIE7EeWZlOvZSMGgzw" target="_zOhVYIE7EeWZlOvZSMGgzw">
+            <children xmi:type="notation:Node" xmi:id="_3c2XAIE7EeWZlOvZSMGgzw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3c2XAYE7EeWZlOvZSMGgzw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3c2-EIE7EeWZlOvZSMGgzw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3c2-EYE7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3c2-EoE7EeWZlOvZSMGgzw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3c2-E4E7EeWZlOvZSMGgzw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_3c1v8YE7EeWZlOvZSMGgzw"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_3c1v8oE7EeWZlOvZSMGgzw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3c1v84E7EeWZlOvZSMGgzw" points="[0, 0, 446, 68]$[-446, -68, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3c3lIIE7EeWZlOvZSMGgzw" id="(0.0,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3c3lIYE7EeWZlOvZSMGgzw" id="(1.0,0.25)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zM7Z84E7EeWZlOvZSMGgzw" name="Foo meeting" incomingEdges="_zM8BBoE7EeWZlOvZSMGgzw _zM8BCYE7EeWZlOvZSMGgzw _zM8BD4E7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Meeting" href="calendars.demo#//@meetings.0"/>
+        <semanticElements xmi:type="demo:Meeting" href="calendars.demo#//@meetings.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zM7Z9IE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/meeting.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='Meeting%20node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='Meeting%20node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zM7Z9YE7EeWZlOvZSMGgzw" name="New node" incomingEdges="_zM8BDIE7EeWZlOvZSMGgzw _zM8BEoE7EeWZlOvZSMGgzw _3ckqMIE7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Meeting" href="calendars.demo#//@meetings.1"/>
+        <semanticElements xmi:type="demo:Meeting" href="calendars.demo#//@meetings.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zM7Z9oE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/meeting.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='Meeting%20node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='Meeting%20node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zM7Z94E7EeWZlOvZSMGgzw" name="Pawel" outgoingEdges="_zM8BBoE7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.0"/>
+        <semanticElements xmi:type="demo:Member" href="calendars.demo#//@members.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zM7Z-IE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/member.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zM8BAoE7EeWZlOvZSMGgzw" name="new member" outgoingEdges="_zM8BCYE7EeWZlOvZSMGgzw _zM8BDIE7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.1"/>
+        <semanticElements xmi:type="demo:Member" href="calendars.demo#//@members.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zM8BA4E7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/member.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zM8BBIE7EeWZlOvZSMGgzw" name="new member" outgoingEdges="_zM8BD4E7EeWZlOvZSMGgzw _zM8BEoE7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.2"/>
+        <semanticElements xmi:type="demo:Member" href="calendars.demo#//@members.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zM8BBYE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/member.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2wwtEIE7EeWZlOvZSMGgzw" name="new member" outgoingEdges="_3ckqMIE7EeWZlOvZSMGgzw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.3"/>
+        <semanticElements xmi:type="demo:Member" href="calendars.demo#//@members.3"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_2wxUIIE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/member.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_36CpUIE7EeWZlOvZSMGgzw" name="new member" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.4"/>
+        <semanticElements xmi:type="demo:Member" href="calendars.demo#//@members.4"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_36DQYIE7EeWZlOvZSMGgzw" showIcon="false" labelAlignment="RIGHT" workspacePath="/jug.zg.emf.sirius.example.design/icons/member.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@nodeMappings[name='MemberNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zM8BBoE7EeWZlOvZSMGgzw" sourceNode="_zM7Z94E7EeWZlOvZSMGgzw" targetNode="_zM7Z84E7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zM8BB4E7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zM8BCIE7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zM8BCYE7EeWZlOvZSMGgzw" sourceNode="_zM8BAoE7EeWZlOvZSMGgzw" targetNode="_zM7Z84E7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zM8BCoE7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zM8BC4E7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zM8BDIE7EeWZlOvZSMGgzw" sourceNode="_zM8BAoE7EeWZlOvZSMGgzw" targetNode="_zM7Z9YE7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zM8BDYE7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zM8BDoE7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zM8BD4E7EeWZlOvZSMGgzw" sourceNode="_zM8BBIE7EeWZlOvZSMGgzw" targetNode="_zM7Z84E7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.2"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zM8BEIE7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zM8BEYE7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zM8BEoE7EeWZlOvZSMGgzw" sourceNode="_zM8BBIE7EeWZlOvZSMGgzw" targetNode="_zM7Z9YE7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.2"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zM8BE4E7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zM8BFIE7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_3ckqMIE7EeWZlOvZSMGgzw" sourceNode="_2wwtEIE7EeWZlOvZSMGgzw" targetNode="_zM7Z9YE7EeWZlOvZSMGgzw">
+        <target xmi:type="demo:Member" href="calendars.demo#//@members.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_3clRQIE7EeWZlOvZSMGgzw" size="2" strokeColor="239,41,41">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_3clRQYE7EeWZlOvZSMGgzw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer/@edgeMappings[name='memberToMeeting']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_zM8BFYE7EeWZlOvZSMGgzw"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']/@ownedRepresentations[name='Calendars%20diagram']/@defaultLayer"/>
+      <target xmi:type="demo:Calendar" href="calendars.demo#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/jug.zg.emf.sirius.example.design/description/demo.odesign#//@ownedViewpoints[name='calendar']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

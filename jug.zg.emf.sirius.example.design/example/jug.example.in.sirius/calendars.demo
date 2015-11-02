@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<demo:Calendar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:demo="http://www.jug.zgora.pl/demo" description="hello">
+  <meetings name="Foo meeting" members="//@members.0 //@members.1 //@members.2"/>
+  <meetings name="New node" members="//@members.1 //@members.2 //@members.3"/>
+  <members name="Pawel">
+    <address email="foo@bar.pl"/>
+  </members>
+  <members name="new member"/>
+  <members name="new member"/>
+  <members name="new member"/>
+  <members name="new member"/>
+</demo:Calendar>
