@@ -1,16 +1,6 @@
-/**
- * Copyright (c) 2011-2014 EclipseSource Muenchen GmbH and others.
- *
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- * EclipseSource Munich - initial API and implementation
- */
 package jug.zg.emf.example.rap;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecp.edit.spi.EMFDeleteServiceImpl;
 import org.eclipse.emf.ecp.ui.view.ECPRendererException;
 import org.eclipse.emf.ecp.ui.view.swt.DefaultReferenceService;
@@ -53,18 +43,18 @@ public class View extends ViewPart {
 	@Override
 	public void createPartControl(Composite parent) {
 
-		final Member member = createMember();
+		final EObject exampleObject = createExampleObject();
 
 		try {
 			final Composite content = initComposite(parent);
 
 			// 1. Get a view for the Member object.
 			final VViewModelLoadingProperties properties = VViewFactory.eINSTANCE.createViewModelLoadingProperties();
-			final VView view = ViewProviderHelper.getView(member, properties);
+			final VView view = ViewProviderHelper.getView(exampleObject, properties);
 
 			// 2. Render the view.
-			final ViewModelContext context = ViewModelContextFactory.INSTANCE.createViewModelContext(view, member,
-					new DefaultReferenceService(), new EMFDeleteServiceImpl());
+			final ViewModelContext context = ViewModelContextFactory.INSTANCE.createViewModelContext(view,
+					exampleObject, new DefaultReferenceService(), new EMFDeleteServiceImpl());
 			render = ECPSWTViewRenderer.INSTANCE.render(content, context);
 
 			content.layout();
@@ -100,7 +90,7 @@ public class View extends ViewPart {
 		return content;
 	}
 
-	private Member createMember() {
+	private EObject createExampleObject() {
 		final Address address = DemoFactory.eINSTANCE.createAddress();
 		address.setEmail("foo@bar.pl");
 

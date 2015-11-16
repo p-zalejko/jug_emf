@@ -1,14 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2010 - 2013 IBM Corporation and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *     Lars Vogel <lars.Vogel@gmail.com> - Bug 419770
- *******************************************************************************/
 package jug.zg.emf.e4.example.parts;
 
 import javax.annotation.PostConstruct;
@@ -32,11 +21,11 @@ public class SamplePart {
 
 	@PostConstruct
 	public void createComposite(Composite parent) {
-		final Member member = createMember();
+		final EObject example = createExampleObject();
 		try {
 			final Composite content = initComposite(parent);
 
-			final ViewModelContext vmcMember = getViewModel(member);
+			final ViewModelContext vmcMember = getViewModel(example);
 			ECPSWTViewRenderer.INSTANCE.render(content, vmcMember);
 			content.layout();
 		} catch (final ECPRendererException e) {
@@ -58,7 +47,7 @@ public class SamplePart {
 		return ViewModelContextFactory.INSTANCE.createViewModelContext(view, obj, new DefaultReferenceService());
 	}
 
-	private Member createMember() {
+	private EObject createExampleObject() {
 		Address address = DemoFactory.eINSTANCE.createAddress();
 		address.setEmail("foo@bar.pl");
 
