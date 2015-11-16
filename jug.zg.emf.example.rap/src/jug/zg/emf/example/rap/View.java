@@ -56,7 +56,7 @@ public class View extends ViewPart {
 		final Member member = createMember();
 
 		try {
-			final Composite content = initUi(parent);
+			final Composite content = initComposite(parent);
 
 			// 1. Get a view for the Member object.
 			final VViewModelLoadingProperties properties = VViewFactory.eINSTANCE.createViewModelLoadingProperties();
@@ -85,7 +85,7 @@ public class View extends ViewPart {
 		}
 	}
 
-	private Composite initUi(Composite parent) {
+	private Composite initComposite(Composite parent) {
 		parent.getShell().setMaximized(true);
 		parent.setLayout(GridLayoutFactory.fillDefaults().equalWidth(true).numColumns(1).create());
 		parent.setLayoutData(GridDataFactory.fillDefaults().align(SWT.FILL, SWT.BEGINNING).grab(true, true).create());

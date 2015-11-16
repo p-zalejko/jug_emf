@@ -32,7 +32,7 @@ public class SamplePart {
 
 	@PostConstruct
 	public void createComposite(Composite parent) {
-		final Member member = getDummyEObject();
+		final Member member = createMember();
 		try {
 			final Composite content = initComposite(parent);
 
@@ -58,7 +58,7 @@ public class SamplePart {
 		return ViewModelContextFactory.INSTANCE.createViewModelContext(view, obj, new DefaultReferenceService());
 	}
 
-	private Member getDummyEObject() {
+	private Member createMember() {
 		Address address = DemoFactory.eINSTANCE.createAddress();
 		address.setEmail("foo@bar.pl");
 
