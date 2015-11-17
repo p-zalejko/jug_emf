@@ -15,6 +15,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.jface.databinding,
  com.ibm.icu,
  org.eclipse.emf.databinding,
- org.apache.log4j
+ org.apache.log4j,
+ org.eclipse.emf.query
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

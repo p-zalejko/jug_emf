@@ -9,6 +9,10 @@ public abstract class AbstractDemo {
 
 	public abstract void demo();
 
+	public Calendar createCalendar( ) {
+		return DemoFactory.eINSTANCE.createCalendar();
+	}
+	
 	public Member createMember(String name) {
 		Member member = DemoFactory.eINSTANCE.createMember();
 		member.setName(name);
