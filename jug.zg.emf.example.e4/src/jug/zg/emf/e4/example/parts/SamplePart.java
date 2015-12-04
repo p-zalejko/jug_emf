@@ -1,6 +1,8 @@
 package jug.zg.emf.e4.example.parts;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecp.ui.view.ECPRendererException;
 import org.eclipse.emf.ecp.ui.view.swt.DefaultReferenceService;
@@ -13,19 +15,23 @@ import org.eclipse.jface.layout.GridDataFactory;
 import org.eclipse.jface.layout.GridLayoutFactory;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import demo.Address;
-import demo.DemoFactory;
-import demo.Member;
 
 public class SamplePart {
 
+	private DataProvider dataProvider;
+
+	@Inject
+	public SamplePart(DataProvider dataProvider) {
+		this.dataProvider = dataProvider;
+	}
+
 	@PostConstruct
 	public void createComposite(Composite parent) {
-		final EObject example = createExampleObject();
+		final EObject member = dataProvider.getExampleObject();
 		try {
 			final Composite content = initComposite(parent);
 
-			final ViewModelContext vmcMember = getViewModel(example);
+			final ViewModelContext vmcMember = getViewModel(member);
 			ECPSWTViewRenderer.INSTANCE.render(content, vmcMember);
 			content.layout();
 		} catch (final ECPRendererException e) {
@@ -38,22 +44,14 @@ public class SamplePart {
 		final Composite content = new Composite(parent, SWT.NONE);
 		content.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WHITE));
 		content.setLayout(GridLayoutFactory.fillDefaults().margins(10, 10).create());
- 		content.setLayoutData(GridDataFactory.fillDefaults().create());
+		content.setLayoutData(GridDataFactory.fillDefaults().create());
 		return content;
 	}
 
 	private ViewModelContext getViewModel(final EObject obj) {
 		VView view = ViewProviderHelper.getView(obj, null);
-		return ViewModelContextFactory.INSTANCE.createViewModelContext(view, obj, new DefaultReferenceService());
+		DefaultReferenceService referenceService = new DefaultReferenceService();
+		return ViewModelContextFactory.INSTANCE.createViewModelContext(view, obj, referenceService);
 	}
 
-	private EObject createExampleObject() {
-		Address address = DemoFactory.eINSTANCE.createAddress();
-		address.setEmail("foo@bar.pl");
-
-		Member member = DemoFactory.eINSTANCE.createMember();
-		member.setName("abcdr");
-		member.setAddress(address);
-		return member;
-	}
 }

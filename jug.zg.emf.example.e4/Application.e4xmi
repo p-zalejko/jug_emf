@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_u--uEFw0EeWMTuYIHSINog" elementId="org.eclipse.e4.ide.application" bindingContexts="_u--uGVw0EeWMTuYIHSINog">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_u--uEFw0EeWMTuYIHSINog" elementId="org.eclipse.e4.ide.application" bindingContexts="_u--uGVw0EeWMTuYIHSINog">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_u--uEVw0EeWMTuYIHSINog" label="jug.zg.emf.e4.example" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_u-_VI1w0EeWMTuYIHSINog">
       <children xsi:type="advanced:Perspective" xmi:id="_u-_VJFw0EeWMTuYIHSINog">
@@ -10,7 +10,15 @@
         </children>
       </children>
     </children>
+    <trimBars xmi:id="_8LO7kJq_EeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_9TdH4Jq_EeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_-HudcJq_EeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.handledtoolitem.undo" label="Undo" command="_BbSf8JrAEeWgS-bgclSOzw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__I3KUJq_EeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.handledtoolitem.redo" label="Redo" command="_Bt4r0JrAEeWgS-bgclSOzw"/>
+      </children>
+    </trimBars>
   </children>
+  <handlers xmi:id="_GenP4JrAEeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.handler.undo" contributionURI="bundleclass://jug.zg.emf.example.e4/jug.zg.emf.e4.example.handler.UndoHandler" command="_BbSf8JrAEeWgS-bgclSOzw"/>
+  <handlers xmi:id="_LJS2UJrAEeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.handler.redo" contributionURI="bundleclass://jug.zg.emf.example.e4/jug.zg.emf.e4.example.handler.RedoHandler" command="_Bt4r0JrAEeWgS-bgclSOzw"/>
   <bindingTables xmi:id="_u--uHlw0EeWMTuYIHSINog" bindingContext="_u--uGVw0EeWMTuYIHSINog">
     <bindings xmi:id="_u--uH1w0EeWMTuYIHSINog" keySequence="M1+Q"/>
     <bindings xmi:id="_u--uIlw0EeWMTuYIHSINog" keySequence="M1+O"/>
@@ -21,6 +29,8 @@
     <children xmi:id="_u--uGlw0EeWMTuYIHSINog" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_u--uG1w0EeWMTuYIHSINog" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <commands xmi:id="_BbSf8JrAEeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.command.undo" commandName="Undo"/>
+  <commands xmi:id="_Bt4r0JrAEeWgS-bgclSOzw" elementId="jug.zg.emf.example.e4.command.redo" commandName="Redo"/>
   <addons xmi:id="_u--uElw0EeWMTuYIHSINog" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_u--uE1w0EeWMTuYIHSINog" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_u--uFFw0EeWMTuYIHSINog" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
